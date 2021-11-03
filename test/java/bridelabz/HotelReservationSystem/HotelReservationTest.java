@@ -1,9 +1,6 @@
 package bridelabz.HotelReservationSystem;
 	import org.junit.Assert;
 	import org.junit.Test;
-	import org.junit.Assert;
-	import org.junit.Test;
-
 	public class HotelReservationTest {
 	    HotelReservationSystem hotelReservation = new HotelReservationSystem();
 
@@ -37,5 +34,21 @@ package bridelabz.HotelReservationSystem;
 	    public void toFindTheCheapestBestRatedHotel_OnWeekdayAndWeekend() {
 	        HotelReservationSystem cheapHotel = new HotelReservationSystem();
 	        cheapHotel.findCheapestBestRatedHotel();
+	    }
+
+	    @Test
+	    public void toFindTheBestRatedHotel_OnWeekdayAndWeekend() {
+	        HotelReservationSystem cheapHotel = new HotelReservationSystem();
+	        cheapHotel.findBestRatedHotel();
+	    }
+
+	    @Test
+	    public void toAddWeekdayWeekendForRewardCustomer() {
+	        HotelReservationSystem rewardCustomer = new HotelReservationSystem();
+	        HotelReservationSystem rewardCustomer1 = new HotelReservationSystem();
+	        HotelReservationSystem rewardCustomer2 = new HotelReservationSystem();
+	        rewardCustomer.addRewardCustomerRate();
+	        rewardCustomer1.addRewardCustomerRate();
+	        rewardCustomer2.addRewardCustomerRate();
 	    }
 	}
